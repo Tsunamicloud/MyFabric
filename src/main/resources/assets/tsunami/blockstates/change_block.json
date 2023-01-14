@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "color=true": {
+      "model": "tsunami:block/c_blue"
+    },
+    "color=false": {
+      "model": "tsunami:block/c_yellow"
+    }
+  }
+}

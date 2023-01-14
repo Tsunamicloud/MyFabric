@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "number=1": {
+      "model": "tsunami:block/n_1"
+    },
+    "number=2": {
+      "model": "tsunami:block/n_2"
+    },
+    "number=3": {
+      "model": "tsunami:block/n_3"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "item.tsunami.crimson_crystal": "Crimson Crystal",
+  "itemGroup.tsunami.other": "Other",
+  "item.tsunami.crimson_crystal.tooltip": "This is an explosive crystal.",
+
+  "item.tsunami.crimson_crystal_sword": "Crimson Crystal Sword",
+  "item.tsunami.crimson_crystal_axe": "Crimson Crystal Axe",
+  "item.tsunami.ketene": "Ketene",
+  "item.tsunami.chinese_chestnut": "Chinese Chestnut",
+
+  "item.tsunami.crimson_crystal_helmet": "Crimson Crystal Helmet",
+  "item.tsunami.crimson_crystal_chest": "Crimson Crystal Chest",
+  "item.tsunami.crimson_crystal_leggings": "Crimson Crystal Leggings",
+  "item.tsunami.crimson_crystal_boots": "Crimson Crystal Boots",
+
+  "block.tsunami.crimson_crystal_block": "Crimson Crystal Block",
+
+  "block.tsunami.change_block": "Change Block",
+  "block.tsunami.example_block": "Example Block",
+  "block.tsunami.number_block": "Number Block",
+  "block.tsunami.break_block": "Break Block",
+  "block.tsunami.container": "Container",
+  "block.tsunami.box_block": "Box Block",
+  "block.tsunami.ui_block": "UI Block",
+  "item.tsunami.bowl_of_water": "Bowl Of Water",
+
+  "effect.tsunami.gene_recombination_effect": "Gene Recombination Effect",
+
+  "item.minecraft.potion.effect.antidote": "Potion of Antidote",
+  "item.minecraft.splash_potion.effect.antidote": "Splash Potion of Antidote",
+  "item.minecraft.lingering_potion.effect.antidote": "Lingering Potion of Antidote",
+  "effect.tsunami.antidote_effect": "Antidote Effect",
+
+  "item.tsunami.copy_item": "Copy Item",
+  "item.tsunami.finish_book_item": "Finish Book Item",
+  "item.tsunami.silk_bag": "Silk Bag",
+
+  "item.tsunami.experience_disc.desc": "Experience Disc"
+
+}

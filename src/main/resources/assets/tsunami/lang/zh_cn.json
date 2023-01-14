@@ -1,0 +1,40 @@
+{
+  "item.tsunami.crimson_crystal": "猩红水晶",
+  "itemGroup.tsunami.other": "其他",
+  "item.tsunami.crimson_crystal.tooltip": "这是一个会爆炸的水晶",
+
+  "item.tsunami.crimson_crystal_sword": "猩红水晶剑",
+  "item.tsunami.crimson_crystal_axe": "猩红水晶斧",
+  "item.tsunami.ketene": "乙烯酮",
+  "item.tsunami.chinese_chestnut": "板栗",
+
+  "item.tsunami.crimson_crystal_helmet": "猩红水晶头盔",
+  "item.tsunami.crimson_crystal_chest": "猩红水晶胸甲",
+  "item.tsunami.crimson_crystal_leggings": "猩红水晶护腿",
+  "item.tsunami.crimson_crystal_boots": "猩红水晶靴子",
+
+  "block.tsunami.crimson_crystal_block": "猩红水晶块",
+  "block.tsunami.change_block": "变化方块",
+  "block.tsunami.example_block": "示例方块",
+  "block.tsunami.number_block": "数字方块",
+  "block.tsunami.break_block": "破碎方块",
+  "block.tsunami.container": "容器",
+  "block.tsunami.box_block": "盒子方块",
+  "block.tsunami.ui_block": "用户交互界面方块",
+
+  "item.tsunami.bowl_of_water": "装着水的碗",
+
+  "effect.tsunami.gene_recombination_effect": "基因重组药水效果",
+
+  "item.minecraft.potion.effect.antidote": "解毒药水",
+  "item.minecraft.splash_potion.effect.antidote": "喷溅型解毒药水",
+  "item.minecraft.lingering_potion.effect.antidote": "滞留型解毒药水",
+  "effect.tsunami.antidote_effect": "解毒药水效果",
+
+  "item.tsunami.copy_item": "物品复制器",
+  "item.tsunami.finish_book_item": "成书制作器",
+  "item.tsunami.silk_bag": "锦囊",
+
+  "item.tsunami.experience_disc.desc": "音乐唱片"
+
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tsunami.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "BrewingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

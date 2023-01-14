@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "tsunami:block/example_block"
+    }
+  }
+
+}

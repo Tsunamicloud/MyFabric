@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "R  ",
+    "R  ",
+    "S  "
+  ],
+  "key": {
+    "R": {
+      "item": "tsunami:crimson_crystal"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tsunami:crimson_crystal_sword"
+  }
+}

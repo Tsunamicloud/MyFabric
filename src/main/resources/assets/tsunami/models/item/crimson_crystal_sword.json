@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tsunami:item/crimson_crystal_sword"
+  }
+}

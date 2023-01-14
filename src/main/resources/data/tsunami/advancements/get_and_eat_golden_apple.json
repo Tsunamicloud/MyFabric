@@ -1,0 +1,45 @@
+{
+  "parent": "tsunami:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple"
+    },
+    "title": "有魔力的苹果",
+    "description": "获得一个金苹果并食用",
+    "frame": "challenge",
+    "show_toast": true,
+    "annouce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:golden_apple"
+            ]
+          }
+        ]
+      }
+    },
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_apple"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["get"],
+    ["eat"]
+  ],
+  "rewards": {
+    "experience": 1000
+  }
+}
