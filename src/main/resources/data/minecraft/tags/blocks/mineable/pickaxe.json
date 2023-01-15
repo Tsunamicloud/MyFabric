@@ -2,6 +2,10 @@
   "replace": false,
   "values":[
     "tsunami:crimson_crystal_block",
-    "tsunami:example_block"
+    "tsunami:example_block",
+
+    "tsunami:saualpite_block",
+    "tsunami:saualpite_ore",
+    "tsunami:deepslate_saualpite_ore"
   ]
 }

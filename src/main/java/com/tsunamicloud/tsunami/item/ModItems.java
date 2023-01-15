@@ -15,7 +15,7 @@ public class ModItems {
 
 
 
-    //注册物品的方法
+    //注册单个物品的方法
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, name), item);
     }

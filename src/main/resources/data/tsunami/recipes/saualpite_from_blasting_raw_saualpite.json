@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "saualpite",
+  "ingredient": {
+    "item": "tsunami:raw_saualpite"
+  },
+  "result": "tsunami:saualpite",
+  "experience": 0.7,
+  "cookingtime": 100
+}

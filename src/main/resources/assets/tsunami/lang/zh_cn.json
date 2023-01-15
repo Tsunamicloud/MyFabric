@@ -41,6 +41,8 @@
   "item.tsunami.raw_saualpite": "粗黝帘石矿",
   "item.tsunami.saualpite": "黝帘石",
   "itemGroup.tsunami.saualpite": "黝帘石分组",
-  "itemGroup.tsunami.saualpite2": "黝帘石分组2"
-
+  "itemGroup.tsunami.saualpite2": "黝帘石分组2",
+  "block.tsunami.saualpite_block": "黝帘晶石块",
+  "block.tsunami.saualpite_ore": "黝帘石矿石",
+  "block.tsunami.deepslate_saualpite_ore": "深板岩黝帘石矿石"
 }

@@ -41,5 +41,8 @@
   "item.tsunami.raw_saualpite": "Raw Saualipite",
   "item.tsunami.saualpite": "Saualipite",
   "itemGroup.tsunami.saualpite": "Saualpite Tab",
-  "itemGroup.tsunami.saualpite2": "Saualpite Tab 2"
+  "itemGroup.tsunami.saualpite2": "Saualpite Tab 2",
+  "block.tsunami.saualpite_block": "Saualpite Block",
+  "block.tsunami.saualpite_ore": "Saualpite Ore",
+  "block.tsunami.deepslate_saualpite_ore": "Deepslate Saualpite Ore"
 }

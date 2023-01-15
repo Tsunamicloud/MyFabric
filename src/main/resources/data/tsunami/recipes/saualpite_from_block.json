@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tsunami:saualpite_block"
+    }
+  ],
+  "result": {
+    "item": "tsunami:saualpite",
+    "count": 9
+  }
+}
