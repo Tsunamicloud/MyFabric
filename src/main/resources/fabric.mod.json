@@ -6,7 +6,7 @@
   "name": "Test Mod",
   "description": "This is an example description! Tell everyone what your mod is about!\nTHIS IS MY FIRST FABRIC MOD",
   "authors": [
-    "Me!"
+    "TsunamiCloud"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.tsunami.Main"
+      "com.tsunamicloud.tsunami.Main"
     ],
     "client": [
-      "com.tsunami.Client"
+      "com.tsunamicloud.tsunami.Client"
     ]
   },
   "mixins": [

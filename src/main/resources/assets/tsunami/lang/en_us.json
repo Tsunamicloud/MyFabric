@@ -35,6 +35,11 @@
   "item.tsunami.finish_book_item": "Finish Book Item",
   "item.tsunami.silk_bag": "Silk Bag",
 
-  "item.tsunami.experience_disc.desc": "Experience Disc"
+  "item.tsunami.experience_disc.desc": "Experience Disc",
 
+
+  "item.tsunami.raw_saualpite": "Raw Saualipite",
+  "item.tsunami.saualpite": "Saualipite",
+  "itemGroup.tsunami.saualpite": "Saualpite Tab",
+  "itemGroup.tsunami.saualpite2": "Saualpite Tab 2"
 }

@@ -35,6 +35,12 @@
   "item.tsunami.finish_book_item": "成书制作器",
   "item.tsunami.silk_bag": "锦囊",
 
-  "item.tsunami.experience_disc.desc": "音乐唱片"
+  "item.tsunami.experience_disc.desc": "音乐唱片",
+
+
+  "item.tsunami.raw_saualpite": "粗黝帘石矿",
+  "item.tsunami.saualpite": "黝帘石",
+  "itemGroup.tsunami.saualpite": "黝帘石分组",
+  "itemGroup.tsunami.saualpite2": "黝帘石分组2"
 
 }

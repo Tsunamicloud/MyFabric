@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.tsunami.mixin",
+  "package": "com.tsunamicloud.tsunami.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],
