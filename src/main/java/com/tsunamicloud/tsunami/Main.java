@@ -11,6 +11,7 @@ import com.tsunamicloud.tsunami.effects.AntidoteEffect;
 import com.tsunamicloud.tsunami.effects.GeneRecombinationEffect;
 import com.tsunamicloud.tsunami.item.ModItems;
 import com.tsunamicloud.tsunami.items.*;
+import com.tsunamicloud.tsunami.painting.ModPaintings;
 import com.tsunamicloud.tsunami.recipes.BowlOfWaterRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyItemRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyRecipe;
@@ -19,6 +20,8 @@ import com.tsunamicloud.tsunami.screen.handler.UIBlockScreenHandler;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalAxe;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalToolMaterial;
 import com.tsunamicloud.tsunami.tools.weapon.CrimsonCrystalSword;
+import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
+import com.tsunamicloud.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -178,8 +181,13 @@ public class Main implements ModInitializer {
 		//LOGGER.info("Hello Fabric world!");
 
 		//分组注册(封装)
+		ModConfiguredFeatures.registerConfiguredFeatures();//需要在顶部调用
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModVillagers.registerModVillagers();
+		ModVillagers.registerTrades();
+		ModPaintings.registerModPaintings();
 
 
 		//注册新建的自定义基础物品：猩红水晶

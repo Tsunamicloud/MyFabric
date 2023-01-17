@@ -44,5 +44,18 @@
   "itemGroup.tsunami.saualpite2": "黝帘石分组2",
   "block.tsunami.saualpite_block": "黝帘晶石块",
   "block.tsunami.saualpite_ore": "黝帘石矿石",
-  "block.tsunami.deepslate_saualpite_ore": "深板岩黝帘石矿石"
+  "block.tsunami.deepslate_saualpite_ore": "深板岩黝帘石矿石",
+  "block.tsunami.netherrack_saualpite_ore": "下界黝帘石矿石",
+  "block.tsunami.endstone_saualpite_ore": "末地黝帘石矿石",
+  "item.tsunami.eight_ball": "随机数八球",
+  "block.tsunami.jumpy_block": "跳跃方块",
+  "item.tsunami.eight_ball.tooltip": "按住Shift获取更多信息！",
+  "item.tsunami.eight_ball_function.tooltip": "右键生成随机数！",
+  "block.tsunami.saualpite_lamp_block": "黝帘石灯",
+
+  "item.tsunami.mint": "薄荷果实",
+  "item.tsunami.mint_seeds": "薄荷种子",
+  "block.tsunami.mint_crop": "薄荷",
+
+  "entity.minecraft.villager.jump_master": "跳跳村民"
 }

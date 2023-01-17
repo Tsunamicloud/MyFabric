@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "tsunami:block/saualpite_lamp_block_on"
+    },
+    "lit=false": {
+      "model": "tsunami:block/saualpite_lamp_block_off"
+    }
+  }
+
+}

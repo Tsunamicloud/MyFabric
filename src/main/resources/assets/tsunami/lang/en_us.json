@@ -44,5 +44,18 @@
   "itemGroup.tsunami.saualpite2": "Saualpite Tab 2",
   "block.tsunami.saualpite_block": "Saualpite Block",
   "block.tsunami.saualpite_ore": "Saualpite Ore",
-  "block.tsunami.deepslate_saualpite_ore": "Deepslate Saualpite Ore"
+  "block.tsunami.deepslate_saualpite_ore": "Deepslate Saualpite Ore",
+  "block.tsunami.netherrack_saualpite_ore": "Netherrack Saualpite Ore",
+  "block.tsunami.endstone_saualpite_ore": "Endstone Saualpite Ore",
+  "item.tsunami.eight_ball": "Eight Ball",
+  "block.tsunami.jumpy_block": "Jumpy Block",
+  "item.tsunami.eight_ball.tooltip": "Press Shift for more info!",
+  "item.tsunami.eight_ball_function.tooltip": "Right Click to get a random number!",
+  "block.tsunami.saualpite_lamp_block": "Saualpite Lamp Block",
+
+  "item.tsunami.mint": "Mint",
+  "item.tsunami.mint_seeds": "Mint Seeds",
+  "block.tsunami.mint_crop": "Mint Crop",
+
+  "entity.minecraft.villager.jump_master": "Jump Master"
 }
