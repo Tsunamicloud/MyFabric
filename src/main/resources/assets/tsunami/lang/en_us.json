@@ -57,5 +57,15 @@
   "item.tsunami.mint_seeds": "Mint Seeds",
   "block.tsunami.mint_crop": "Mint Crop",
 
-  "entity.minecraft.villager.jump_master": "Jump Master"
+  "entity.minecraft.villager.jump_master": "Jump Master",
+
+  "item.tsunami.dowsing_rod.no_valuables": "No Valuables Found!",
+  "item.tsunami.dowsing_rod": "Dowsing Rod",
+  "item.tsunami.lilac_flower_bulb": "Lilac Flower Bulb(Fuel)",
+  "item.tsunami.grape": "Grape",
+  "item.tsunami.dowsing_rod.tooltip": "Right Click to find valuables",
+  "item.tsunami.dowsing_rod.tooltip.shift": "Press Shift for more information!",
+  "item.tsunami.dowsing_rod.tooltip.shift_2": "This is a second line",
+
+  "tooltip.tsunami.saualpite_block": "A Saualpite Block"
 }

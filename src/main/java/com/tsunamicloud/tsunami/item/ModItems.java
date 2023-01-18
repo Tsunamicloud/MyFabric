@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami.item;
 
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
+import com.tsunamicloud.tsunami.item.custom.DowsingRodItem;
 import com.tsunamicloud.tsunami.item.custom.EightBallItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
@@ -25,6 +26,15 @@ public class ModItems {
     public static final Item MINT = registerItem("mint",
             new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE)
                     .food(new FoodComponent.Builder().hunger(4).saturationModifier(4f).build())));
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxDamage(16)));//maxDamage会同时更改最大堆叠数，因为有maxDamage的物品不能堆叠
+    public static final Item LILAC_FLOWER_BULB = registerItem("lilac_flower_bulb",
+            new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item GRAPE = registerItem("grape",
+            new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE).food(ModFoodComponents.GRAPE)));
+
+
 
     //注册单个物品的方法
     private static Item registerItem(String name, Item item){

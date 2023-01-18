@@ -20,8 +20,9 @@ import com.tsunamicloud.tsunami.screen.handler.UIBlockScreenHandler;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalAxe;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalToolMaterial;
 import com.tsunamicloud.tsunami.tools.weapon.CrimsonCrystalSword;
+import com.tsunamicloud.tsunami.util.ModRegistries;
 import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
-import com.tsunamicloud.villager.ModVillagers;
+import com.tsunamicloud.tsunami.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -59,7 +60,7 @@ public class Main implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final String MOD_ID = "tsunami";
+	public static final String MOD_ID = "tsunami";//mod id 会被用到很多次
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 	//习惯写一个空参构造器
@@ -182,12 +183,12 @@ public class Main implements ModInitializer {
 
 		//分组注册(封装)
 		ModConfiguredFeatures.registerConfiguredFeatures();//需要在顶部调用
-
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModVillagers.registerModVillagers();
 		ModVillagers.registerTrades();
 		ModPaintings.registerModPaintings();
+		ModRegistries.registerModStuffs();
 
 
 		//注册新建的自定义基础物品：猩红水晶

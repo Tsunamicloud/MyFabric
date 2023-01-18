@@ -7,6 +7,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -24,7 +25,14 @@ public class JumpyBlock extends Block {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         //若用Text.literal实现时聊天框显示4次消息，即方法被调用了四次：server端mainhand和offhand各一次，client端mainhand和offhand各一次
         player.sendMessage(Text.of("Right Clicked This!"), true);
-        return super.onUse(state, world, pos, player, hand, hit);
+        if(world.isClient()){
+            if (hand == Hand.MAIN_HAND){
+                player.sendMessage(new LiteralText("Client: This is THE CLIENT! MAIN HAND!"), false);
+            }else {
+                player.sendMessage(new LiteralText("Client: This is THE CLIENT! OFF HAND!"), false);
+            }
+        }
+        return ActionResult.SUCCESS;
     }
 
     @Override

@@ -11,16 +11,25 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModBlocks {
     public static final Block SAUALPITE_BLOCK = registerBlock("saualpite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),
+            ModItemGroup.SAUALPITE, "tooltip.tsunami.saualpite_block");
     public static final Block SAUALPITE_ORE = registerBlock("saualpite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.SAUALPITE);
@@ -47,15 +56,31 @@ public class ModBlocks {
     private static Block registerBlockWithoutItem(String name, Block block){
         return Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, name), block);
     }
-    //注册单个方块的方法
+
+    //注册单个方块的方法：含tooltip和不含tooltip
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, name), block);
     }
-    //注册单个方块物品的方法
+    private static Block registerBlock(String name, Block block, ItemGroup tab, String tooltipKey){
+        registerBlockItem(name, block, tab, tooltipKey);
+        return Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, name), block);
+    }
+
+
+    //注册单个方块物品的方法：含tooltip和不含tooltip
     private static Item registerBlockItem(String name, Block block, ItemGroup tab){
         return Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(tab)));
+    }
+    private static Item registerBlockItem(String name, Block block, ItemGroup group, String tooltipKey) {
+        return Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings().group(group)) {
+                    @Override
+                    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                        tooltip.add(new TranslatableText(tooltipKey));
+                    }
+                });
     }
 
     //总的注册方法(注册所有模组方块)
