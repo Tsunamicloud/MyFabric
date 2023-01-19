@@ -78,5 +78,16 @@
   "block.tsunami.saualpite_slab": "黝帘石台阶",
   "block.tsunami.saualpite_stairs": "黝帘石楼梯",
   "block.tsunami.tsunami_door": "海啸的门",
-  "block.tsunami.tsunami_trapdoor": "海啸的活板门"
+  "block.tsunami.tsunami_trapdoor": "海啸的活板门",
+
+  "item.tsunami.saualpite_pickaxe": "黝帘石镐",
+  "item.tsunami.saualpite_axe": "黝帘石斧",
+  "item.tsunami.saualpite_hoe": "黝帘石锄",
+  "item.tsunami.saualpite_sword": "黝帘石剑",
+  "item.tsunami.saualpite_shovel": "黝帘石铲",
+
+  "item.tsunami.saualpite_helmet": "黝帘石头盔",
+  "item.tsunami.saualpite_chestplate": "黝帘石胸甲",
+  "item.tsunami.saualpite_leggings": "黝帘石护腿",
+  "item.tsunami.saualpite_boots": "黝帘石靴子"
 }

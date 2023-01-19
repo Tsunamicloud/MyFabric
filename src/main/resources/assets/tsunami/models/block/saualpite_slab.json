@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "tsunami:block/saualpite_block",
+    "top": "tsunami:block/saualpite_block",
+    "side": "tsunami:block/saualpite_block"
+  }
+}

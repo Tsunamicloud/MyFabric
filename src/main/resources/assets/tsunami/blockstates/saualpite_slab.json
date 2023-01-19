@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tsunami:block/saualpite_slab"
+    },
+    "type=double": {
+      "model": "tsunami:block/saualpite_block"
+    },
+    "type=top": {
+      "model": "tsunami:block/saualpite_slab_top"
+    }
+  }
+}

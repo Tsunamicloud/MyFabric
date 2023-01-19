@@ -2,12 +2,10 @@ package com.tsunamicloud.tsunami.item;
 
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
-import com.tsunamicloud.tsunami.item.custom.DowsingRodItem;
-import com.tsunamicloud.tsunami.item.custom.EightBallItem;
+import com.tsunamicloud.tsunami.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -33,6 +31,39 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
     public static final Item GRAPE = registerItem("grape",
             new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE).food(ModFoodComponents.GRAPE)));
+
+    /*public static final Item SAUALPITE_SWORD = registerItem("saualpite_sword",
+            new SwordItem(ModToolMaterials.SAUALPITE, 1, 2f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));*/
+    public static final Item SAUALPITE_SWORD = registerItem("saualpite_sword",
+            new ModSlownessSwordItem(ModToolMaterials.SAUALPITE, 1, 2f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_AXE = registerItem("saualpite_axe",
+            new ModAxeItem(ModToolMaterials.SAUALPITE, 3, 1f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_HOE = registerItem("saualpite_hoe",
+            new ModHoeItem(ModToolMaterials.SAUALPITE, 0, 0f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_SHOVEL = registerItem("saualpite_shovel",
+            new ShovelItem(ModToolMaterials.SAUALPITE, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_PICKAXE = registerItem("saualpite_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.SAUALPITE, 1, 0f,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+
+    public static final Item SAUALPITE_HELMET = registerItem("saualpite_helmet",
+            new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_CHESTPLATE = registerItem("saualpite_chestplate",
+            new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_LEGGINGS = registerItem("saualpite_leggings",
+            new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    public static final Item SAUALPITE_BOOTS = registerItem("saualpite_boots",
+            new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+
 
 
 

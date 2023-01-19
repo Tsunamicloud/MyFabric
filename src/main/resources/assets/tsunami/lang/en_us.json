@@ -78,5 +78,16 @@
   "block.tsunami.saualpite_slab": "Saualpite Slab",
   "block.tsunami.saualpite_stairs": "Saualpite Stairs",
   "block.tsunami.tsunami_door": "Tsunami's Door",
-  "block.tsunami.tsunami_trapdoor": "Tsunami's Trapdoor"
+  "block.tsunami.tsunami_trapdoor": "Tsunami's Trapdoor",
+
+  "item.tsunami.saualpite_pickaxe": "Saualpite Pickaxe",
+  "item.tsunami.saualpite_axe": "Saualpite axe",
+  "item.tsunami.saualpite_hoe": "Saualpite Hoe",
+  "item.tsunami.saualpite_sword": "Saualpite Sword",
+  "item.tsunami.saualpite_shovel": "Saualpite Shovel",
+
+  "item.tsunami.saualpite_helmet": "Saualpite Helmet",
+  "item.tsunami.saualpite_chestplate": "Saualpite Chestplate",
+  "item.tsunami.saualpite_leggings": "Saualpite Leggings",
+  "item.tsunami.saualpite_boots": "Saualpite Boots"
 }
