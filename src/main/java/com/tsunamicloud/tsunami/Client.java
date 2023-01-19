@@ -18,6 +18,12 @@ import net.minecraft.util.Identifier;
 public class Client implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+
+        //自定义non-block的渲染（opaque）
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TSUNAMI_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TSUNAMI_TRAPDOOR, RenderLayer.getCutout());
+
+        //自定义UI
         ScreenRegistry.register(Main.UI_BLOCK_SCREEN_HANDLER, UIBlockScreen::new);
 
         //自定义命令

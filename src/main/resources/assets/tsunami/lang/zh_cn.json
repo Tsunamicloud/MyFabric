@@ -67,5 +67,16 @@
   "item.tsunami.dowsing_rod.tooltip.shift": "按住shift获取更多信息！",
   "item.tsunami.dowsing_rod.tooltip.shift_2": "这是第二行",
 
-  "tooltip.tsunami.saualpite_block": "一个黝帘石方块"
+  "tooltip.tsunami.saualpite_block": "一个黝帘石方块",
+
+  "block.tsunami.saualpite_button": "黝帘石按钮",
+  "block.tsunami.saualpite_pressure_plate": "黝帘石压力板",
+  "block.tsunami.saualpite_fence": "黝帘石栅栏",
+  "block.tsunami.saualpite_fence_gate": "黝帘石栅栏门",
+  "block.tsunami.saualpite_wall": "黝帘石墙",
+
+  "block.tsunami.saualpite_slab": "黝帘石台阶",
+  "block.tsunami.saualpite_stairs": "黝帘石楼梯",
+  "block.tsunami.tsunami_door": "海啸的门",
+  "block.tsunami.tsunami_trapdoor": "海啸的活板门"
 }

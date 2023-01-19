@@ -1,21 +1,17 @@
 package com.tsunamicloud.tsunami.block;
 
 import com.tsunamicloud.tsunami.Main;
-import com.tsunamicloud.tsunami.block.custom.JumpyBlock;
-import com.tsunamicloud.tsunami.block.custom.MintCropBlock;
-import com.tsunamicloud.tsunami.block.custom.SaualpiteLampBlock;
+import com.tsunamicloud.tsunami.block.custom.*;
 import com.tsunamicloud.tsunami.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
-import net.minecraft.block.OreBlock;
+import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
@@ -50,6 +46,29 @@ public class ModBlocks {
                     .luminance(state -> state.get(SaualpiteLampBlock.LIT) ? 15 : 0)), ModItemGroup.SAUALPITE);
     public static final Block MINT_CROP = registerBlockWithoutItem("mint_crop",
             new MintCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
+    public static final Block SAUALPITEE_BUTTON = registerBlock("saualpite_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL)
+                    .strength(4f).requiresTool().noCollision()), ModItemGroup.SAUALPITE);//button没有碰撞体积
+    public static final Block SAUALPITEE_PRESSURE_PLATE = registerBlock("saualpite_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING ,FabricBlockSettings.of(Material.METAL)
+                    .strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block SAUALPITEE_FENCE = registerBlock("saualpite_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block SAUALPITEE_FENCE_GATE = registerBlock("saualpite_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block SAUALPITEE_WALL = registerBlock("saualpite_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+
+    public static final Block SAUALPITEE_SLAB = registerBlock("saualpite_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block SAUALPITEE_STAIRS = registerBlock("saualpite_stairs",
+            new ModStairsBlock(ModBlocks.SAUALPITE_BLOCK.getDefaultState() ,
+                    FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block TSUNAMI_DOOR = registerBlock("tsunami_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool().nonOpaque()), ModItemGroup.SAUALPITE);//metal材料只能用红石信号打开
+    public static final Block TSUNAMI_TRAPDOOR = registerBlock("tsunami_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool().nonOpaque()), ModItemGroup.SAUALPITE);
 
 
     //注册单个方块,且without item的方法

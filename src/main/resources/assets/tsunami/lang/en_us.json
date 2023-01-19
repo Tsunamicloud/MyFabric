@@ -67,5 +67,16 @@
   "item.tsunami.dowsing_rod.tooltip.shift": "Press Shift for more information!",
   "item.tsunami.dowsing_rod.tooltip.shift_2": "This is a second line",
 
-  "tooltip.tsunami.saualpite_block": "A Saualpite Block"
+  "tooltip.tsunami.saualpite_block": "A Saualpite Block",
+
+  "block.tsunami.saualpite_button": "Saualpite Button",
+  "block.tsunami.saualpite_pressure_plate": "Saualpite Pressure Plate",
+  "block.tsunami.saualpite_fence": "Saualpite Fence",
+  "block.tsunami.saualpite_fence_gate": "Saualpite Fence Gate",
+  "block.tsunami.saualpite_wall": "Saualpite Wall",
+
+  "block.tsunami.saualpite_slab": "Saualpite Slab",
+  "block.tsunami.saualpite_stairs": "Saualpite Stairs",
+  "block.tsunami.tsunami_door": "Tsunami's Door",
+  "block.tsunami.tsunami_trapdoor": "Tsunami's Trapdoor"
 }
