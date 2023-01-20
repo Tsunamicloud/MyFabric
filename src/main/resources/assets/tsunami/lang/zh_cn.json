@@ -89,5 +89,11 @@
   "item.tsunami.saualpite_helmet": "黝帘石头盔",
   "item.tsunami.saualpite_chestplate": "黝帘石胸甲",
   "item.tsunami.saualpite_leggings": "黝帘石护腿",
-  "item.tsunami.saualpite_boots": "黝帘石靴子"
+  "item.tsunami.saualpite_boots": "黝帘石靴子",
+
+  "block.tsunami.lilac_flower": "丁香花",
+  "block.tsunami.potted_lilac_flower": "栽丁香花的花盆",
+
+  "item.tsunami.magic_saualpite_dust": "魔力黝帘石粉末",
+  "item.tsunami.data_tablet": "数据牌"
 }

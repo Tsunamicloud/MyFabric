@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -70,6 +71,15 @@ public class ModBlocks {
     public static final Block TSUNAMI_TRAPDOOR = registerBlock("tsunami_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool().nonOpaque()), ModItemGroup.SAUALPITE);
 
+    public static final Block LILAC_FLOWER = registerBlock("lilac_flower",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12,
+                    FabricBlockSettings.copy(Blocks.DANDELION).strength(4f).nonOpaque()), ModItemGroup.SAUALPITE);//蒲公英
+    //带花的花盆不会出现在inventory中，故注册时无需将此block关联block item
+    public static final Block POTTED_LILAC_FLOWER = registerBlockWithoutBlockItem("potted_lilac_flower",
+            new FlowerPotBlock(ModBlocks.LILAC_FLOWER,
+                    FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.SAUALPITE);//allium:葱球
+
+
 
     //注册单个方块,且without item的方法
     private static Block registerBlockWithoutItem(String name, Block block){
@@ -83,6 +93,10 @@ public class ModBlocks {
     }
     private static Block registerBlock(String name, Block block, ItemGroup tab, String tooltipKey){
         registerBlockItem(name, block, tab, tooltipKey);
+        return Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, name), block);
+    }
+    //注册单个方块，但不关联block item
+    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup tab){
         return Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, name), block);
     }
 

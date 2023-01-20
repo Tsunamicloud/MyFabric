@@ -89,5 +89,11 @@
   "item.tsunami.saualpite_helmet": "Saualpite Helmet",
   "item.tsunami.saualpite_chestplate": "Saualpite Chestplate",
   "item.tsunami.saualpite_leggings": "Saualpite Leggings",
-  "item.tsunami.saualpite_boots": "Saualpite Boots"
+  "item.tsunami.saualpite_boots": "Saualpite Boots",
+
+  "block.tsunami.lilac_flower": "Lilac Flower",
+  "block.tsunami.potted_lilac_flower": "Potted Lilac Flower",
+
+  "item.tsunami.magic_saualpite_dust": "Magic Saualipite Dust",
+  "item.tsunami.data_tablet": "Data Tablet"
 }

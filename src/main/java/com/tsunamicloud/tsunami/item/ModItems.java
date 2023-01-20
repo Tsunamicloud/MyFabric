@@ -52,8 +52,10 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
 
     public static final Item SAUALPITE_HELMET = registerItem("saualpite_helmet",
-            new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+    //全盔甲效果：全盔甲时提供20s幸运buff
+    //只需要有一个是ModArmorItem即可提供full armor effect
     public static final Item SAUALPITE_CHESTPLATE = registerItem("saualpite_chestplate",
             new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
@@ -63,6 +65,13 @@ public class ModItems {
     public static final Item SAUALPITE_BOOTS = registerItem("saualpite_boots",
             new ArmorItem(ModArmorMaterials.SAUALPITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+
+    public static final Item MAGIC_SAUALPITE_DUST = registerItem("magic_saualpite_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
+
 
 
 

@@ -22,6 +22,8 @@ public class Client implements ClientModInitializer {
         //自定义non-block的渲染（opaque）
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TSUNAMI_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TSUNAMI_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LILAC_FLOWER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LILAC_FLOWER, RenderLayer.getCutout());
 
         //自定义UI
         ScreenRegistry.register(Main.UI_BLOCK_SCREEN_HANDLER, UIBlockScreen::new);

@@ -1,5 +1,7 @@
 package com.tsunamicloud.tsunami.item.custom;
 
+import com.tsunamicloud.tsunami.item.ModItems;
+import com.tsunamicloud.tsunami.util.InventoryUtil;
 import com.tsunamicloud.tsunami.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -9,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -39,6 +42,11 @@ public class DowsingRodItem extends Item {
                 if(isValuableBlock(blockBelow)) {
                     outputValuableCoordinates(positionClicked.down(i), player, blockBelow);
                     foundBlock = true;
+
+                    if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
+                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
+                    }
+
                     break;
                 }
             }
@@ -60,10 +68,10 @@ public class DowsingRodItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()){
             //传入的Text变量是数组，需要多行时只需依次添加即可
+            tooltip.add(new TranslatableText("item.tsunami.dowsing_rod.tooltip").formatted(Formatting.BLUE));
+        }else{
             tooltip.add(new TranslatableText("item.tsunami.dowsing_rod.tooltip.shift").formatted(Formatting.AQUA));
             tooltip.add(new TranslatableText("item.tsunami.dowsing_rod.tooltip.shift_2").formatted(Formatting.AQUA));
-        }else{
-            tooltip.add(new TranslatableText("item.tsunami.dowsing_rod.tooltip").formatted(Formatting.BLUE));
         }
 
         super.appendTooltip(stack, world, tooltip, context);
@@ -81,5 +89,17 @@ public class DowsingRodItem extends Item {
                 || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;*/
         return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);
     }
+
+
+
+    private void addNbtToDataTablet(PlayerEntity player, BlockPos pos, Block blockBelow) {
+        ItemStack dataTablet =
+                player.getInventory().getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
+        NbtCompound nbtData = new NbtCompound();
+        nbtData.putString("tsunami.last_ore", "Found " + blockBelow.asItem().getName().getString() + " at (" +
+                pos.getX() + ", "+ pos.getY() + ", "+ pos.getZ() + ")");
+        dataTablet.setNbt(nbtData);
+    }
+
 
 }
