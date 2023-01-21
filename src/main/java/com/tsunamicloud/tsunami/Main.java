@@ -23,6 +23,7 @@ import com.tsunamicloud.tsunami.tools.weapon.CrimsonCrystalSword;
 import com.tsunamicloud.tsunami.util.ModRegistries;
 import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
 import com.tsunamicloud.tsunami.villager.ModVillagers;
+import com.tsunamicloud.tsunami.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -190,6 +191,7 @@ public class Main implements ModInitializer {
 		ModVillagers.registerTrades();
 		ModPaintings.registerModPaintings();
 		ModRegistries.registerModStuffs();
+		ModWorldGen.generateModWorldGen();
 
 
 		//注册新建的自定义基础物品：猩红水晶

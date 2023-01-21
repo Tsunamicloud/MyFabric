@@ -20,6 +20,7 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -93,7 +94,8 @@ public class DowsingRodItem extends Item {
     private boolean isValuableBlock(Block block) {
         /*return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
                 || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;*/
-        return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);
+        //return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);//1.18.1
+        return Registry.BLOCK.getOrCreateEntry(Registry.BLOCK.getKey(block).get()).isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
     }
 
 

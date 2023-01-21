@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tsunami:jacaranda_log",
+    "tsunami:jacaranda_wood",
+    "tsunami:stripped_jacaranda_log",
+    "tsunami:stripped_jacaranda_wood"
+  ]
+}

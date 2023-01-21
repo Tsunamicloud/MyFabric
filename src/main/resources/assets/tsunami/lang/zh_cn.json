@@ -103,5 +103,13 @@
   "tsunami.dowsing_rod_found_ore": "找到矿物的音效",
 
   "item.tsunami.bar_brawl_music_disc": "Bar Brawl Music Disc",
-  "item.tsunami.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
+  "item.tsunami.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "block.tsunami.jacaranda_log": "蓝楹花木",
+  "block.tsunami.jacaranda_wood": "蓝楹花木原木",
+  "block.tsunami.stripped_jacaranda_log": "去皮的蓝楹花木",
+  "block.tsunami.stripped_jacaranda_wood": "去皮的蓝楹花木原木",
+  "block.tsunami.jacaranda_planks": "蓝楹花木板",
+  "block.tsunami.jacaranda_leaves": "蓝楹花树叶",
+  "block.tsunami.jacaranda_sapling": "蓝楹花树苗"
 }

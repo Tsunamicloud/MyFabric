@@ -4,6 +4,7 @@ import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.custom.*;
 import com.tsunamicloud.tsunami.item.ModItemGroup;
 import com.tsunamicloud.tsunami.sound.ModSounds;
+import com.tsunamicloud.tsunami.world.feature.tree.JacarandaSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -84,6 +85,23 @@ public class ModBlocks {
     public static final Block WINTER_WINDOW = registerBlock("winter_window",
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroup.SAUALPITE);
 
+    public static final Block JACARANDA_LOG = registerBlock("jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block JACARANDA_WOOD = registerBlock("jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block STRIPPED_JACARANDA_LOG = registerBlock("stripped_jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.SAUALPITE);
+    public static final Block STRIPPED_JACARANDA_WOOD = registerBlock("stripped_jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.SAUALPITE);
+
+    public static final Block JACARANDA_PLANKS = registerBlock("jacaranda_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.SAUALPITE);
+
+    public static final Block JACARANDA_LEAVES = registerBlock("jacaranda_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.SAUALPITE);
+    public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
+            new ModSaplingBlock(new JacarandaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SAUALPITE);
 
 
     //注册单个方块,且without item的方法

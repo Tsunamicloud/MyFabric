@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "tsunami:block/jacaranda_sapling"
+  }
+}
