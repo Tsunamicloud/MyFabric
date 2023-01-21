@@ -1,7 +1,54 @@
 {
-  "music_experience": {
+  "music_rhythm_of_the_rain": {
     "sounds": [
-      "tsunami:music_experience"
+      {
+        "name": "tsunami:music_rhythm_of_the_rain",
+        "stream": true
+      }
+    ]
+  },
+  "dowsing_rod_found_ore": {
+    "subtitle": "tsunami.dowsing_rod_found_ore",
+    "sounds": [
+      "tsunami:dowsing_rod_found_ore"
+    ]
+  },
+  "saualpite_lamp_break": {
+    "subtitle": "tsunami.saualpite_lamp_break",
+    "sounds": [
+      "tsunami:saualpite_lamp_break"
+    ]
+  },
+  "saualpite_lamp_step": {
+    "subtitle": "tsunami.saualpite_lamp_step",
+    "sounds": [
+      "tsunami:saualpite_lamp_step"
+    ]
+  },
+  "saualpite_lamp_place": {
+    "subtitle": "tsunami.saualpite_lamp_place",
+    "sounds": [
+      "tsunami:saualpite_lamp_place"
+    ]
+  },
+  "saualpite_lamp_hit": {
+    "subtitle": "tsunami.saualpite_lamp_hit",
+    "sounds": [
+      "tsunami:saualpite_lamp_hit"
+    ]
+  },
+  "saualpite_lamp_fall": {
+    "subtitle": "tsunami.saualpite_lamp_fall",
+    "sounds": [
+      "tsunami:saualpite_lamp_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "tsunami:bar_brawl",
+        "stream": true
+      }
     ]
   }
 }

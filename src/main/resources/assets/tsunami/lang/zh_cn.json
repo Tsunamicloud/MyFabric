@@ -35,8 +35,8 @@
   "item.tsunami.finish_book_item": "成书制作器",
   "item.tsunami.silk_bag": "锦囊",
 
-  "item.tsunami.experience_disc.desc": "音乐唱片",
-
+  "item.tsunami.rhythm_of_the_rain_music_disc": "唱片：听见下雨的声音",
+  "item.tsunami.rhythm_of_the_rain_music_disc.desc": "周深 - 听见下雨的声音",
 
   "item.tsunami.raw_saualpite": "粗黝帘石矿",
   "item.tsunami.saualpite": "黝帘石",
@@ -55,7 +55,7 @@
 
   "item.tsunami.mint": "薄荷果实",
   "item.tsunami.mint_seeds": "薄荷种子",
-  "block.tsunami.mint_crop": "薄荷",
+  "block.tsunami.mint_crop": "薄荷植株",
 
   "entity.minecraft.villager.jump_master": "跳跳村民",
 
@@ -95,5 +95,13 @@
   "block.tsunami.potted_lilac_flower": "栽丁香花的花盆",
 
   "item.tsunami.magic_saualpite_dust": "魔力黝帘石粉末",
-  "item.tsunami.data_tablet": "数据牌"
+  "item.tsunami.data_tablet": "数据牌",
+  "block.tsunami.winter_window": "冬窗",
+
+  "item.tsunami.tsunami_bow": "海啸的弓",
+
+  "tsunami.dowsing_rod_found_ore": "找到矿物的音效",
+
+  "item.tsunami.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tsunami.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
 }

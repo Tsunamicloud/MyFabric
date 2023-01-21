@@ -3,6 +3,7 @@ package com.tsunamicloud.tsunami.block;
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.custom.*;
 import com.tsunamicloud.tsunami.item.ModItemGroup;
+import com.tsunamicloud.tsunami.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -44,9 +45,10 @@ public class ModBlocks {
             new JumpyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.SAUALPITE);
     public static final Block SAUALPITE_LAMP_BLOCK = registerBlock("saualpite_lamp_block",
             new SaualpiteLampBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()
-                    .luminance(state -> state.get(SaualpiteLampBlock.LIT) ? 15 : 0)), ModItemGroup.SAUALPITE);
+                    .luminance(state -> state.get(SaualpiteLampBlock.LIT) ? 15 : 0)
+                    .sounds(ModSounds.SAUALPITE_SOUNDS)), ModItemGroup.SAUALPITE);
     public static final Block MINT_CROP = registerBlockWithoutItem("mint_crop",
-            new MintCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+            new MintCropBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));//无需注册item，此block不会被玩家放置
 
     public static final Block SAUALPITEE_BUTTON = registerBlock("saualpite_button",
             new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL)
@@ -78,6 +80,9 @@ public class ModBlocks {
     public static final Block POTTED_LILAC_FLOWER = registerBlockWithoutBlockItem("potted_lilac_flower",
             new FlowerPotBlock(ModBlocks.LILAC_FLOWER,
                     FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.SAUALPITE);//allium:葱球
+
+    public static final Block WINTER_WINDOW = registerBlock("winter_window",
+            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroup.SAUALPITE);
 
 
 

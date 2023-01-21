@@ -1,6 +1,7 @@
 package com.tsunamicloud.tsunami.item.custom;
 
 import com.tsunamicloud.tsunami.item.ModItems;
+import com.tsunamicloud.tsunami.sound.ModSounds;
 import com.tsunamicloud.tsunami.util.InventoryUtil;
 import com.tsunamicloud.tsunami.util.ModTags;
 import net.minecraft.block.Block;
@@ -12,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -43,9 +45,13 @@ public class DowsingRodItem extends Item {
                     outputValuableCoordinates(positionClicked.down(i), player, blockBelow);
                     foundBlock = true;
 
+                    //找到后相Tablet物品添加nbt信息
                     if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
                         addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
                     }
+                    //找到后播放音效
+                    context.getWorld().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE,
+                            SoundCategory.BLOCKS, 1f, 1f);
 
                     break;
                 }

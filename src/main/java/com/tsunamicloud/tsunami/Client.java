@@ -3,6 +3,7 @@ package com.tsunamicloud.tsunami;
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
 import com.tsunamicloud.tsunami.screen.UIBlockScreen;
+import com.tsunamicloud.tsunami.util.ModModelPredicateProvider;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -25,6 +26,9 @@ public class Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LILAC_FLOWER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LILAC_FLOWER, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WINTER_WINDOW, RenderLayer.getTranslucent());
+
+
         //自定义UI
         ScreenRegistry.register(Main.UI_BLOCK_SCREEN_HANDLER, UIBlockScreen::new);
 
@@ -45,6 +49,9 @@ public class Client implements ClientModInitializer {
 
         //自定义作物
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MINT_CROP, RenderLayer.getCutout());
+
+        //自定义弓
+        ModModelPredicateProvider.registerModModels();
 
     }
 }

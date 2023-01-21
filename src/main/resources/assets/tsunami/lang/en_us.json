@@ -35,8 +35,8 @@
   "item.tsunami.finish_book_item": "Finish Book Item",
   "item.tsunami.silk_bag": "Silk Bag",
 
-  "item.tsunami.experience_disc.desc": "Experience Disc",
-
+  "item.tsunami.rhythm_of_the_rain_music_disc": "Rhythm Of The Rain Music Disc",
+  "item.tsunami.rhythm_of_the_rain_music_disc.desc": "ZhouShen - Rhythm Of The Rain",
 
   "item.tsunami.raw_saualpite": "Raw Saualipite",
   "item.tsunami.saualpite": "Saualipite",
@@ -95,5 +95,14 @@
   "block.tsunami.potted_lilac_flower": "Potted Lilac Flower",
 
   "item.tsunami.magic_saualpite_dust": "Magic Saualipite Dust",
-  "item.tsunami.data_tablet": "Data Tablet"
+  "item.tsunami.data_tablet": "Data Tablet",
+  "block.tsunami.winter_window": "Winter Window",
+
+  "item.tsunami.tsunami_bow": "Tsunami's Bow",
+
+  "tsunami.dowsing_rod_found_ore": "Found Ore Sound",
+
+  "item.tsunami.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tsunami.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
+
 }

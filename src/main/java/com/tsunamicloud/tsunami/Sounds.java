@@ -11,11 +11,11 @@ public class Sounds {
 
     //提供一个注册函数
     private static SoundEvent register(String name){
-        return Registry.register(Registry.SOUND_EVENT, new Identifier("tsunami:"+name),  new SoundEvent(new Identifier("tsunami" + name)));
+        return Registry.register(Registry.SOUND_EVENT, new Identifier("tsunami:"+name),  new SoundEvent(new Identifier("tsunami:" + name)));
     }
 
     //注册音效
-    public static final SoundEvent MUSIC_EXPERIENCE = Sounds.register("music_experience");
+    public static final SoundEvent MUSIC_RHYTHM_OF_THE_RAIN = Sounds.register("music_rhythm_of_the_rain");
 
 
 }

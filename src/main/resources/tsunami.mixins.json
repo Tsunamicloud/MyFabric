@@ -4,6 +4,7 @@
   "package": "com.tsunamicloud.tsunami.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "ModEntityDataSaver"
   ],
   "client": [
     "BrewingMixin"

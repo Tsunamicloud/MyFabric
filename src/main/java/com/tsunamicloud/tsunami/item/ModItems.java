@@ -3,6 +3,7 @@ package com.tsunamicloud.tsunami.item;
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.item.custom.*;
+import com.tsunamicloud.tsunami.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -19,7 +20,7 @@ public class ModItems {
             new EightBallItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));//最大堆叠数为1
     //注册薄荷种子
     public static final Item MINT_SEEDS = registerItem("mint_seeds",
-            new AliasedBlockItem(ModBlocks.MINT_CROP, new FabricItemSettings().group(ModItemGroup.SAUALPITE)));
+            new AliasedBlockItem(ModBlocks.MINT_CROP, new FabricItemSettings().group(ModItemGroup.SAUALPITE)));//alias:别名
     //注册薄荷果实
     public static final Item MINT = registerItem("mint",
             new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE)
@@ -71,6 +72,13 @@ public class ModItems {
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
+
+    public static final Item TSUNAMI_BOW = registerItem("tsunami_bow",
+            new BowItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxDamage(640)));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
 
 

@@ -132,8 +132,9 @@ public class Main implements ModInitializer {
 	//NBT：锦囊
 	public static final SilkBag SILK_BAG = new SilkBag(new Item.Settings());
 	public static final RecipeSerializer<SilkBagRecipe> SILK_BAG_RECIPE = RecipeSerializer.register("crafting_silk_bag", new SpecialRecipeSerializer<>(SilkBagRecipe::new));
+
 	//新建自定义唱片
-	public static final MusicDisc DISC_EXPERIENCE = new MusicDisc(2, Sounds.MUSIC_EXPERIENCE, new Item.Settings());
+	public static final MusicDisc RHYTHM_OF_THE_RAIN_MUSIC_DISC = new MusicDisc(2, Sounds.MUSIC_RHYTHM_OF_THE_RAIN, new Item.Settings().maxCount(1));
 
 
 	//为GUI提供静态块
@@ -169,7 +170,7 @@ public class Main implements ModInitializer {
 				stacks.add(new ItemStack(Main.COPY_ITEM));
 				stacks.add(new ItemStack(Main.FINISH_BOOK_ITEM));
 				stacks.add(new ItemStack(Main.SILK_BAG));
-				stacks.add(new ItemStack(Main.DISC_EXPERIENCE));
+				stacks.add(new ItemStack(Main.RHYTHM_OF_THE_RAIN_MUSIC_DISC));
 			})
 			.build();
 
@@ -254,7 +255,7 @@ public class Main implements ModInitializer {
 		Particles.particle();
 		//加载音效，注册唱片
 		Sounds.sound();
-		Registry.register(Registry.ITEM,new Identifier("tsunami","experience_disc"),DISC_EXPERIENCE);
+		Registry.register(Registry.ITEM,new Identifier("tsunami","rhythm_of_the_rain_music_disc"),RHYTHM_OF_THE_RAIN_MUSIC_DISC);
 	}
 }
 
