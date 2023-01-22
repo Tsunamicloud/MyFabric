@@ -1,0 +1,14 @@
+{
+  "type": "tsunami:saualpite_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "tsunami:saualpite"
+    }
+  ],
+  "output": {
+    "item": "tsunami:saualpite_pickaxe"
+  }
+}

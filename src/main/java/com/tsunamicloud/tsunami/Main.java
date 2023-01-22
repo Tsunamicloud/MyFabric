@@ -15,10 +15,12 @@ import com.tsunamicloud.tsunami.item.ModItems;
 import com.tsunamicloud.tsunami.items.*;
 import com.tsunamicloud.tsunami.painting.ModPaintings;
 import com.tsunamicloud.tsunami.potion.ModPotions;
+import com.tsunamicloud.tsunami.recipe.ModRecipes;
 import com.tsunamicloud.tsunami.recipes.BowlOfWaterRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyItemRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyRecipe;
 import com.tsunamicloud.tsunami.recipes.SilkBagRecipe;
+import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
 import com.tsunamicloud.tsunami.screen.handler.UIBlockScreenHandler;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalAxe;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalToolMaterial;
@@ -200,6 +202,8 @@ public class Main implements ModInitializer {
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		ModBlockEntities.registerAllBlockEntities();
+		ModRecipes.registerRecipes();
+		ModScreenHandlers.registerAllScreenHandlers();
 
 
 		//注册新建的自定义基础物品：猩红水晶
