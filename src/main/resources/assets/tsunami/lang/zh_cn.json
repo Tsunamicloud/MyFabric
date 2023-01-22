@@ -111,5 +111,11 @@
   "block.tsunami.stripped_jacaranda_wood": "去皮的蓝楹花木原木",
   "block.tsunami.jacaranda_planks": "蓝楹花木板",
   "block.tsunami.jacaranda_leaves": "蓝楹花树叶",
-  "block.tsunami.jacaranda_sapling": "蓝楹花树苗"
+  "block.tsunami.jacaranda_sapling": "蓝楹花树苗",
+
+  "effect.tsunami.freeze": "冰冻",
+
+  "item.minecraft.potion.effect.freeze_potion": "冰冻药水",
+  "item.minecraft.splash_potion.effect.freeze_potion": "喷溅型冰冻药水",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "滞留型冰冻药水"
 }

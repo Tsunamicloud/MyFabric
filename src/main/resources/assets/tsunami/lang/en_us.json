@@ -111,5 +111,11 @@
   "block.tsunami.stripped_jacaranda_wood": "Stripped Jacaranda Wood",
   "block.tsunami.jacaranda_planks": "Jacaranda Planks",
   "block.tsunami.jacaranda_leaves": "Jacaranda Leaves",
-  "block.tsunami.jacaranda_sapling": "Jacaranda Sapling"
+  "block.tsunami.jacaranda_sapling": "Jacaranda Sapling",
+
+  "effect.tsunami.freeze": "Freeze",
+
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze"
 }

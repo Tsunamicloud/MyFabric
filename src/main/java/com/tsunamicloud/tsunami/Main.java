@@ -7,11 +7,13 @@ import com.tsunamicloud.tsunami.blocks.entities.BoxEntity;
 import com.tsunamicloud.tsunami.blocks.entities.BreakEntity;
 import com.tsunamicloud.tsunami.blocks.entities.ContainerEntity;
 import com.tsunamicloud.tsunami.blocks.entities.UIBlockEntity;
+import com.tsunamicloud.tsunami.effect.ModEffects;
 import com.tsunamicloud.tsunami.effects.AntidoteEffect;
 import com.tsunamicloud.tsunami.effects.GeneRecombinationEffect;
 import com.tsunamicloud.tsunami.item.ModItems;
 import com.tsunamicloud.tsunami.items.*;
 import com.tsunamicloud.tsunami.painting.ModPaintings;
+import com.tsunamicloud.tsunami.potion.ModPotions;
 import com.tsunamicloud.tsunami.recipes.BowlOfWaterRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyItemRecipe;
 import com.tsunamicloud.tsunami.recipes.CopyRecipe;
@@ -20,6 +22,7 @@ import com.tsunamicloud.tsunami.screen.handler.UIBlockScreenHandler;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalAxe;
 import com.tsunamicloud.tsunami.tools.CrimsonCrystalToolMaterial;
 import com.tsunamicloud.tsunami.tools.weapon.CrimsonCrystalSword;
+import com.tsunamicloud.tsunami.util.ModLootTableModifiers;
 import com.tsunamicloud.tsunami.util.ModRegistries;
 import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
 import com.tsunamicloud.tsunami.villager.ModVillagers;
@@ -192,6 +195,9 @@ public class Main implements ModInitializer {
 		ModPaintings.registerModPaintings();
 		ModRegistries.registerModStuffs();
 		ModWorldGen.generateModWorldGen();
+		ModLootTableModifiers.modifyLootTables();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 
 		//注册新建的自定义基础物品：猩红水晶
