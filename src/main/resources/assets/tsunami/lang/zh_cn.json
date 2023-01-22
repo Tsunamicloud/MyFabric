@@ -117,5 +117,9 @@
 
   "item.minecraft.potion.effect.freeze_potion": "冰冻药水",
   "item.minecraft.splash_potion.effect.freeze_potion": "喷溅型冰冻药水",
-  "item.minecraft.lingering_potion.effect.freeze_potion": "滞留型冰冻药水"
+  "item.minecraft.lingering_potion.effect.freeze_potion": "滞留型冰冻药水",
+
+  "item.tsunami.saualpite_staff": "黝帘石权杖",
+
+  "block.tsunami.saualpite_blaster": "黝帘石高炉"
 }

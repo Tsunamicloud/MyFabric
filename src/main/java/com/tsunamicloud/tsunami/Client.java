@@ -2,6 +2,8 @@ package com.tsunamicloud.tsunami;
 
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
+import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
+import com.tsunamicloud.tsunami.screen.SaualpiteBlasterScreen;
 import com.tsunamicloud.tsunami.screen.UIBlockScreen;
 import com.tsunamicloud.tsunami.util.ModModelPredicateProvider;
 import net.fabricmc.api.ClientModInitializer;
@@ -26,17 +28,20 @@ public class Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LILAC_FLOWER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LILAC_FLOWER, RenderLayer.getCutout());
 
-        //自定义作物
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MINT_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MINT_CROP, RenderLayer.getCutout());//自定义作物
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WINTER_WINDOW, RenderLayer.getTranslucent());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.JACARANDA_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.JACARANDA_SAPLING, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAUALPITE_BLASTER, RenderLayer.getCutout());
+
 
         //自定义UI
         ScreenRegistry.register(Main.UI_BLOCK_SCREEN_HANDLER, UIBlockScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.SAUALPITE_BLASTER_SCREEN_HANDLER, SaualpiteBlasterScreen::new);
+
 
         //自定义命令
         CommandRegistrationCallback.EVENT.register(

@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami;
 import com.tsunamicloud.tsunami.armor.CrimsonCrystalArmorItem;
 import com.tsunamicloud.tsunami.armor.material.CrimsonCrystalArmorMaterial;
 import com.tsunamicloud.tsunami.block.ModBlocks;
+import com.tsunamicloud.tsunami.block.entity.ModBlockEntities;
 import com.tsunamicloud.tsunami.blocks.*;
 import com.tsunamicloud.tsunami.blocks.entities.BoxEntity;
 import com.tsunamicloud.tsunami.blocks.entities.BreakEntity;
@@ -198,6 +199,7 @@ public class Main implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModBlockEntities.registerAllBlockEntities();
 
 
 		//注册新建的自定义基础物品：猩红水晶

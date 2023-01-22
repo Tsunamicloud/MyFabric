@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "tsunami:block/saualpite_blaster" },
+    "facing=east": { "model": "tsunami:block/saualpite_blaster", "y": 90 },
+    "facing=south": { "model": "tsunami:block/saualpite_blaster", "y": 180 },
+    "facing=west": { "model": "tsunami:block/saualpite_blaster", "y": 270 }
+  }
+}

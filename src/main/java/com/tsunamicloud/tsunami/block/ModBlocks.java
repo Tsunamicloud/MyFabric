@@ -103,6 +103,9 @@ public class ModBlocks {
             new ModSaplingBlock(new JacarandaSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SAUALPITE);
 
+    public static final Block SAUALPITE_BLASTER = registerBlock("saualpite_blaster",
+            new SaualpiteBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SAUALPITE);
+
 
     //注册单个方块,且without item的方法
     private static Block registerBlockWithoutItem(String name, Block block){

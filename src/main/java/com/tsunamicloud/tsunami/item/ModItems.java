@@ -80,6 +80,8 @@ public class ModItems {
             new ModMusicDiscItem(7, ModSounds.BAR_BRAWL,
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
+    public static final Item SAUALPITE_STAFF = registerItem("saualpite_staff",
+            new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
 
 
