@@ -14,6 +14,7 @@ import com.tsunamicloud.tsunami.effects.GeneRecombinationEffect;
 import com.tsunamicloud.tsunami.item.ModItems;
 import com.tsunamicloud.tsunami.items.*;
 import com.tsunamicloud.tsunami.painting.ModPaintings;
+import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.potion.ModPotions;
 import com.tsunamicloud.tsunami.recipe.ModRecipes;
 import com.tsunamicloud.tsunami.recipes.BowlOfWaterRecipe;
@@ -204,6 +205,7 @@ public class Main implements ModInitializer {
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerAllScreenHandlers();
+		ModParticles.registerParticles();
 
 
 		//注册新建的自定义基础物品：猩红水晶

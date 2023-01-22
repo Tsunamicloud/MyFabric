@@ -1,6 +1,7 @@
 package com.tsunamicloud.tsunami.item.custom;
 
 import com.tsunamicloud.tsunami.item.ModItems;
+import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.sound.ModSounds;
 import com.tsunamicloud.tsunami.util.InventoryUtil;
 import com.tsunamicloud.tsunami.util.ModTags;
@@ -54,6 +55,9 @@ public class DowsingRodItem extends Item {
                     context.getWorld().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE,
                             SoundCategory.BLOCKS, 1f, 1f);
 
+                    //找到后生成自定义粒子效果
+                    spawnFoundParticles(context, positionClicked);
+
                     break;
                 }
             }
@@ -82,6 +86,18 @@ public class DowsingRodItem extends Item {
         }
 
         super.appendTooltip(stack, world, tooltip, context);
+    }
+
+
+
+    private void spawnFoundParticles(ItemUsageContext pContext, BlockPos positionClicked) {
+        for(int i = 0; i < 360; i++) {
+            if(i % 20 == 0) {
+                pContext.getWorld().addParticle(ModParticles.CITRINE_PARTICLE,
+                        positionClicked.getX() + 0.5d, positionClicked.getY() + 1, positionClicked.getZ() + 0.5d,
+                        Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+            }
+        }
     }
 
 

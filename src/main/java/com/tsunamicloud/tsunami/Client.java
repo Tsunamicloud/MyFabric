@@ -2,6 +2,8 @@ package com.tsunamicloud.tsunami;
 
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
+import com.tsunamicloud.tsunami.particle.ModParticles;
+import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
 import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
 import com.tsunamicloud.tsunami.screen.SaualpiteBlasterScreen;
 import com.tsunamicloud.tsunami.screen.UIBlockScreen;
@@ -40,6 +42,7 @@ public class Client implements ClientModInitializer {
 
         //自定义UI
         ScreenRegistry.register(Main.UI_BLOCK_SCREEN_HANDLER, UIBlockScreen::new);
+
         ScreenRegistry.register(ModScreenHandlers.SAUALPITE_BLASTER_SCREEN_HANDLER, SaualpiteBlasterScreen::new);
 
 
@@ -57,6 +60,9 @@ public class Client implements ClientModInitializer {
                     ParticleFactoryRegistry.getInstance().register(Particles.RED_STAR, FlameParticle.Factory::new);
                 }
         );
+
+        ParticleFactoryRegistry.getInstance().register(ModParticles.CITRINE_PARTICLE, CitrineParticle.Factory::new);
+
 
 
         //自定义弓
