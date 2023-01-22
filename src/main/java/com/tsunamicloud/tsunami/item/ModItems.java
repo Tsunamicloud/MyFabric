@@ -83,7 +83,9 @@ public class ModItems {
     public static final Item SAUALPITE_STAFF = registerItem("saualpite_staff",
             new Item(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
-
+    public static final Item JACARANDA_SIGN = registerItem("jacaranda_sign",
+            new SignItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(16),
+                    ModBlocks.JACARANDA_SIGN_BLOCK, ModBlocks.JACARANDA_WALL_SIGN_BLOCK));
 
 
     //注册单个物品的方法

@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami.block;
 
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.custom.*;
+import com.tsunamicloud.tsunami.block.entity.ModSignTypes;
 import com.tsunamicloud.tsunami.item.ModItemGroup;
 import com.tsunamicloud.tsunami.sound.ModSounds;
 import com.tsunamicloud.tsunami.world.feature.tree.JacarandaSaplingGenerator;
@@ -105,6 +106,12 @@ public class ModBlocks {
 
     public static final Block SAUALPITE_BLASTER = registerBlock("saualpite_blaster",
             new SaualpiteBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SAUALPITE);
+
+    public static final Block JACARANDA_WALL_SIGN_BLOCK = registerBlockWithoutBlockItem("jacaranda_wall_sign",
+            new WallSignBlock(FabricBlockSettings.copy(Blocks.OAK_WALL_SIGN), ModSignTypes.JACARANDA), ModItemGroup.SAUALPITE);//墙上的告示牌
+    public static final Block JACARANDA_SIGN_BLOCK = registerBlockWithoutBlockItem("jacaranda_sign",
+            new SignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), ModSignTypes.JACARANDA), ModItemGroup.SAUALPITE);//告示牌
+
 
 
     //注册单个方块,且without item的方法
