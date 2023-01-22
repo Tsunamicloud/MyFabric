@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami;
 
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
+import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
 import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
@@ -12,6 +13,8 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
@@ -67,6 +70,20 @@ public class Client implements ClientModInitializer {
 
         //自定义弓
         ModModelPredicateProvider.registerModModels();
+
+
+
+
+        //自定义液体
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.HONEY_STILL,
+                new SimpleFluidRenderHandler(SimpleFluidRenderHandler.WATER_STILL,
+                        SimpleFluidRenderHandler.WATER_FLOWING,
+                        SimpleFluidRenderHandler.WATER_OVERLAY, 0xe9860c));//液体的颜色
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.HONEY_FLOWING,
+                new SimpleFluidRenderHandler(SimpleFluidRenderHandler.WATER_STILL,
+                        SimpleFluidRenderHandler.WATER_FLOWING,
+                        SimpleFluidRenderHandler.WATER_OVERLAY, 0xe9860c));//液体的颜色
+
 
     }
 }

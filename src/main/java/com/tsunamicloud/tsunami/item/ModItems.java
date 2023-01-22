@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami.item;
 
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
+import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.item.custom.*;
 import com.tsunamicloud.tsunami.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -86,6 +87,9 @@ public class ModItems {
     public static final Item JACARANDA_SIGN = registerItem("jacaranda_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(16),
                     ModBlocks.JACARANDA_SIGN_BLOCK, ModBlocks.JACARANDA_WALL_SIGN_BLOCK));
+
+    public static final Item HONEY_BUCKET = registerItem("honey_bucket",
+            new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
 
     //注册单个物品的方法

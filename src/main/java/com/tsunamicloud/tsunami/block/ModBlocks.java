@@ -3,6 +3,7 @@ package com.tsunamicloud.tsunami.block;
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.custom.*;
 import com.tsunamicloud.tsunami.block.entity.ModSignTypes;
+import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.item.ModItemGroup;
 import com.tsunamicloud.tsunami.sound.ModSounds;
 import com.tsunamicloud.tsunami.world.feature.tree.JacarandaSaplingGenerator;
@@ -111,6 +112,10 @@ public class ModBlocks {
             new WallSignBlock(FabricBlockSettings.copy(Blocks.OAK_WALL_SIGN), ModSignTypes.JACARANDA), ModItemGroup.SAUALPITE);//墙上的告示牌
     public static final Block JACARANDA_SIGN_BLOCK = registerBlockWithoutBlockItem("jacaranda_sign",
             new SignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), ModSignTypes.JACARANDA), ModItemGroup.SAUALPITE);//告示牌
+
+    public static final Block HONEY_FLUID_BLOCK = registerBlockWithoutBlockItem("honey_fluid_block",
+            new ModFluidBlock(ModFluids.HONEY_STILL,FabricBlockSettings.of(Material.WATER)
+                    .noCollision().nonOpaque().dropsNothing()), ModItemGroup.SAUALPITE);
 
 
 
