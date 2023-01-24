@@ -129,5 +129,7 @@
 
   "enchantment.tsunami.lightning_striker": "雷击",
 
-  "item.tsunami.raccoon_spawn_egg": "浣熊刷怪蛋"
+  "item.tsunami.raccoon_spawn_egg": "浣熊刷怪蛋",
+
+  "entity.minecraft.villager.blast_master": "黝帘工人"
 }

@@ -103,7 +103,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.SAUALPITE);
     public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
             new ModSaplingBlock(new JacarandaSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.SAUALPITE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> ModBlocks.SAUALPITE_BLOCK), ModItemGroup.SAUALPITE);
 
     public static final Block SAUALPITE_BLASTER = registerBlock("saualpite_blaster",
             new SaualpiteBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SAUALPITE);

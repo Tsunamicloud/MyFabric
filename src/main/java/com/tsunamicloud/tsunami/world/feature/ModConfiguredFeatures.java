@@ -26,7 +26,9 @@ public class ModConfiguredFeatures {
                     new StraightTrunkPlacer(5, 6, 3),
                     BlockStateProvider.of(ModBlocks.JACARANDA_LEAVES),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),//Foliage：树叶
-                    new TwoLayersFeatureSize(1, 0, 2)).build());
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    //防止树木下的方块变成dirt
+                    .dirtProvider(BlockStateProvider.of(ModBlocks.SAUALPITE_BLOCK)).build());
 
     //树苗的放置，能放置在其上的方块
     //ConfiguredFeature -> PlacedFeature -> CF -> PF
