@@ -46,7 +46,6 @@ public class RaccoonEntity extends AnimalEntity implements IAnimatable {
     }
 
     protected void initGoals() {
-        //数字越低，优先级越高
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
