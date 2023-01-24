@@ -2,6 +2,7 @@ package com.tsunamicloud.tsunami.item;
 
 import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
+import com.tsunamicloud.tsunami.entity.ModEntities;
 import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.item.custom.*;
 import com.tsunamicloud.tsunami.sound.ModSounds;
@@ -90,6 +91,10 @@ public class ModItems {
 
     public static final Item HONEY_BUCKET = registerItem("honey_bucket",
             new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
+
+    public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",
+            new SpawnEggItem(ModEntities.RACCOON,0x948e8d, 0x3b3635,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
 
     //注册单个物品的方法

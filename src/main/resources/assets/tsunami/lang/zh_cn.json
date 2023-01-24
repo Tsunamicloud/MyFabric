@@ -125,5 +125,9 @@
 
   "block.tsunami.jacaranda_sign": "蓝楹花木告示牌",
 
-  "item.tsunami.honey_bucket": "蜂蜜桶"
+  "item.tsunami.honey_bucket": "蜂蜜桶",
+
+  "enchantment.tsunami.lightning_striker": "雷击",
+
+  "item.tsunami.raccoon_spawn_egg": "浣熊刷怪蛋"
 }

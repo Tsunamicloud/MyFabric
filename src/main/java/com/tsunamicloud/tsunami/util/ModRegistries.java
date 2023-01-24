@@ -4,10 +4,13 @@ import com.tsunamicloud.tsunami.Main;
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.command.ReturnHomeCommand;
 import com.tsunamicloud.tsunami.command.SetHomeCommand;
+import com.tsunamicloud.tsunami.entity.ModEntities;
+import com.tsunamicloud.tsunami.entity.custom.RaccoonEntity;
 import com.tsunamicloud.tsunami.event.ModPlayerEventCopyFrom;
 import com.tsunamicloud.tsunami.item.ModItems;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -25,6 +28,7 @@ public class ModRegistries {
         registerFlammableBlock();
         registerStrippables();
         registerCustomTrades();
+        registerAttributes();
     }
 
 
@@ -89,6 +93,11 @@ public class ModRegistries {
                             new ItemStack(ModItems.SAUALPITE_PICKAXE, 1),
                             12,7,0.08f));
                 });
+    }
+
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.RACCOON, RaccoonEntity.setAttributes());
     }
 
 }

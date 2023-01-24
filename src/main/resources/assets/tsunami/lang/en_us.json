@@ -125,5 +125,9 @@
 
   "block.tsunami.jacaranda_sign": "Jacaranda Sign",
 
-  "item.tsunami.honey_bucket": "Honey Bucket"
+  "item.tsunami.honey_bucket": "Honey Bucket",
+
+  "enchantment.tsunami.lightning_striker": "Lighting Striker",
+
+  "item.tsunami.raccoon_spawn_egg": "Raccoon Spawn Egg"
 }

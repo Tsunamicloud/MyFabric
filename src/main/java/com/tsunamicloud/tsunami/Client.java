@@ -2,6 +2,8 @@ package com.tsunamicloud.tsunami;
 
 import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
+import com.tsunamicloud.tsunami.entity.ModEntities;
+import com.tsunamicloud.tsunami.entity.client.RaccoonRenderer;
 import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
@@ -15,6 +17,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
@@ -83,6 +86,10 @@ public class Client implements ClientModInitializer {
                 new SimpleFluidRenderHandler(SimpleFluidRenderHandler.WATER_STILL,
                         SimpleFluidRenderHandler.WATER_FLOWING,
                         SimpleFluidRenderHandler.WATER_OVERLAY, 0xe9860c));//液体的颜色
+
+
+        //自定义实体
+        EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
 
 
     }
