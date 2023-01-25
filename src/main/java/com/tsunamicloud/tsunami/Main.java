@@ -32,6 +32,7 @@ import com.tsunamicloud.tsunami.util.ModRegistries;
 import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
 import com.tsunamicloud.tsunami.villager.ModVillagers;
 import com.tsunamicloud.tsunami.world.gen.ModWorldGen;
+import com.tsunamicloud.tsunami.world.structure.ModStructures;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -210,6 +211,7 @@ public class Main implements ModInitializer {
 		ModParticles.registerParticles();
 		ModEnchantments.registerModEnchantments();
 		GeckoLib.initialize();
+		ModStructures.registerStructureFeatures();
 
 
 		//注册新建的自定义基础物品：猩红水晶
