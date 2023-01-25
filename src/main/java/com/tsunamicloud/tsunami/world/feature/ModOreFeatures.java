@@ -6,8 +6,7 @@ import java.util.List;
 
 public class ModOreFeatures {
 
-    //提供一些帮助方法（原版的OrePlacedFeatures，但为private）
-
+    //提供一些帮助方法（原版的OrePlacedFeatures为private）
     public static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
     }

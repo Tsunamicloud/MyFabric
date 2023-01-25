@@ -30,15 +30,16 @@ public class ModPlacedFeatures {
     //主世界
     public static final RegistryEntry<PlacedFeature> SAUALPITE_ORE_PLACED = PlacedFeatures.register("saualpite_ore_placed",
             ModConfiguredFeatures.SAUALPITE_ORE, ModOreFeatures.modifiersWithCount(7,//veins per chunk
-                    //distribution of the ore：fixed和above botto有啥区别？？？
+                    //distribution of the ore：fixed和above bottom有啥区别？？？
                     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
     //下界
     public static final RegistryEntry<PlacedFeature> NETHER_SAUALPITE_ORE_PLACED = PlacedFeatures.register("nether_saualpite_ore_placed",
             ModConfiguredFeatures.NETHER_SAUALPITE_ORE, ModOreFeatures.modifiersWithCount(10,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
+                    //trapezoid经测试可以正常生成
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
     //末地
     public static final RegistryEntry<PlacedFeature> END_SAUALPITE_ORE_PLACED = PlacedFeatures.register("end_saualpite_ore_placed",
             ModConfiguredFeatures.END_SAUALPITE_ORE, ModOreFeatures.modifiersWithCount(10,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
 
 }

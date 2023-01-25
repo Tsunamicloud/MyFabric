@@ -4,7 +4,9 @@ import com.tsunamicloud.tsunami.block.ModBlocks;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
 import com.tsunamicloud.tsunami.entity.ModEntities;
 import com.tsunamicloud.tsunami.entity.client.RaccoonRenderer;
+import com.tsunamicloud.tsunami.entity.client.armor.SaualpiteArmorRenderer;
 import com.tsunamicloud.tsunami.fluid.ModFluids;
+import com.tsunamicloud.tsunami.item.ModItems;
 import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
 import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
@@ -25,6 +27,7 @@ import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class Client implements ClientModInitializer {
     @Override
@@ -90,6 +93,10 @@ public class Client implements ClientModInitializer {
 
         //自定义实体
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
+
+        //自定义3d盔甲模型
+        GeoArmorRenderer.registerArmorRenderer(new SaualpiteArmorRenderer(), ModItems.SAUALPITE_BOOTS,
+                ModItems.SAUALPITE_LEGGINGS, ModItems.SAUALPITE_CHESTPLATE, ModItems.SAUALPITE_HELMET);
 
 
     }
