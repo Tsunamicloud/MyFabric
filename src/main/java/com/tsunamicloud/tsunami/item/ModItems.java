@@ -96,6 +96,11 @@ public class ModItems {
             new SpawnEggItem(ModEntities.RACCOON,0x948e8d, 0x3b3635,
                     new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
+    public static final Item ANIMATED_ITEM = registerItem("animated_item",
+            new AnimatedItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
+
+
+
 
     //注册单个物品的方法
     private static Item registerItem(String name, Item item){

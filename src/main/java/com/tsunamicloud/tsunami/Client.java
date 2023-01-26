@@ -7,6 +7,7 @@ import com.tsunamicloud.tsunami.entity.client.RaccoonRenderer;
 import com.tsunamicloud.tsunami.entity.client.armor.SaualpiteArmorRenderer;
 import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.item.ModItems;
+import com.tsunamicloud.tsunami.item.client.AnimatedItemRenderer;
 import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
 import com.tsunamicloud.tsunami.screen.ModScreenHandlers;
@@ -28,6 +29,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
+import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
 public class Client implements ClientModInitializer {
     @Override
@@ -98,6 +100,8 @@ public class Client implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new SaualpiteArmorRenderer(), ModItems.SAUALPITE_BOOTS,
                 ModItems.SAUALPITE_LEGGINGS, ModItems.SAUALPITE_CHESTPLATE, ModItems.SAUALPITE_HELMET);
 
+        //自定义带动画的物品
+        GeoItemRenderer.registerItemRenderer(ModItems.ANIMATED_ITEM, new AnimatedItemRenderer());
 
     }
 }

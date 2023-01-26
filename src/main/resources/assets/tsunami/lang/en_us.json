@@ -131,5 +131,7 @@
 
   "item.tsunami.raccoon_spawn_egg": "Raccoon Spawn Egg",
 
-  "entity.minecraft.villager.blast_master": "Blast Master"
+  "entity.minecraft.villager.blast_master": "Blast Master",
+
+  "item.tsunami.animated_item": "Animated Item"
 }
