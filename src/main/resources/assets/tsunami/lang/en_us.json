@@ -133,5 +133,7 @@
 
   "entity.minecraft.villager.blast_master": "Blast Master",
 
-  "item.tsunami.animated_item": "Animated Item"
+  "item.tsunami.animated_item": "Animated Item",
+
+  "block.tsunami.animated_block": "Animated Block"
 }

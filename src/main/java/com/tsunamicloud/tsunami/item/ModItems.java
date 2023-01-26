@@ -99,6 +99,9 @@ public class ModItems {
     public static final Item ANIMATED_ITEM = registerItem("animated_item",
             new AnimatedItem(new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
+    public static final Item ANIMATED_BLOCK_ITEM = registerItem("animated_block",
+            new AnimatedBlockItem(ModBlocks.ANIMATED_BLOCK,
+                    new FabricItemSettings().group(ModItemGroup.SAUALPITE).maxCount(1)));
 
 
 

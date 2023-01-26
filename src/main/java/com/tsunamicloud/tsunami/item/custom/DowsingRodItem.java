@@ -6,6 +6,7 @@ import com.tsunamicloud.tsunami.sound.ModSounds;
 import com.tsunamicloud.tsunami.util.InventoryUtil;
 import com.tsunamicloud.tsunami.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -42,14 +43,14 @@ public class DowsingRodItem extends Item {
             boolean foundBlock = false;
             //1.18主世界最低深度为-64（+64即为--64）
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
-                Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
+                BlockState blockBelow = context.getWorld().getBlockState(positionClicked.down(i));
                 if(isValuableBlock(blockBelow)) {
-                    outputValuableCoordinates(positionClicked.down(i), player, blockBelow);
+                    outputValuableCoordinates(positionClicked.down(i), player, blockBelow.getBlock());
                     foundBlock = true;
 
                     //找到后相Tablet物品添加nbt信息
                     if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
-                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
+                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow.getBlock());
                     }
                     //找到后播放音效
                     context.getWorld().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE,
@@ -107,11 +108,14 @@ public class DowsingRodItem extends Item {
                 "(" + blockPos.getX() + "," + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
     }
 
-    private boolean isValuableBlock(Block block) {
-        /*return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;*/
+    /*private boolean isValuableBlock(Block block) {
+        //return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
+        //      || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
         //return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);//1.18.1
         return Registry.BLOCK.getOrCreateEntry(Registry.BLOCK.getKey(block).get()).isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
+    }*/
+    private boolean isValuableBlock(BlockState state) {
+        return state.isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
     }
 
 

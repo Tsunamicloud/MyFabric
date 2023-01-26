@@ -1,12 +1,15 @@
 package com.tsunamicloud.tsunami;
 
 import com.tsunamicloud.tsunami.block.ModBlocks;
+import com.tsunamicloud.tsunami.block.entity.ModBlockEntities;
+import com.tsunamicloud.tsunami.block.entity.client.AnimatedBlockRenderer;
 import com.tsunamicloud.tsunami.commands.NbtCommand;
 import com.tsunamicloud.tsunami.entity.ModEntities;
 import com.tsunamicloud.tsunami.entity.client.RaccoonRenderer;
 import com.tsunamicloud.tsunami.entity.client.armor.SaualpiteArmorRenderer;
 import com.tsunamicloud.tsunami.fluid.ModFluids;
 import com.tsunamicloud.tsunami.item.ModItems;
+import com.tsunamicloud.tsunami.item.client.AnimatedBlockItemRenderer;
 import com.tsunamicloud.tsunami.item.client.AnimatedItemRenderer;
 import com.tsunamicloud.tsunami.particle.ModParticles;
 import com.tsunamicloud.tsunami.particle.custom.CitrineParticle;
@@ -20,6 +23,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
@@ -49,6 +53,7 @@ public class Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.JACARANDA_SAPLING, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAUALPITE_BLASTER, RenderLayer.getCutout());
+
 
 
         //自定义UI
@@ -102,6 +107,10 @@ public class Client implements ClientModInitializer {
 
         //自定义带动画的物品
         GeoItemRenderer.registerItemRenderer(ModItems.ANIMATED_ITEM, new AnimatedItemRenderer());
+
+        //自定义带动画的方块
+        GeoItemRenderer.registerItemRenderer(ModItems.ANIMATED_BLOCK_ITEM, new AnimatedBlockItemRenderer());
+        BlockEntityRendererRegistry.register(ModBlockEntities.ANIMATED_BLOCK_ENTITY, AnimatedBlockRenderer::new);
 
     }
 }

@@ -133,5 +133,7 @@
 
   "entity.minecraft.villager.blast_master": "黝帘工人",
 
-  "item.tsunami.animated_item": "带动画的物品"
+  "item.tsunami.animated_item": "带动画的物品",
+
+  "block.tsunami.animated_block": "带动画的方块"
 }

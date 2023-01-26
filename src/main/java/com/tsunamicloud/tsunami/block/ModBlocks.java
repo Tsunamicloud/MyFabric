@@ -117,6 +117,11 @@ public class ModBlocks {
             new ModFluidBlock(ModFluids.HONEY_STILL,FabricBlockSettings.of(Material.WATER)
                     .noCollision().nonOpaque().dropsNothing()), ModItemGroup.SAUALPITE);
 
+    public static final Block ANIMATED_BLOCK = registerBlockWithoutBlockItem("animated_block",
+            new AnimatedBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SAUALPITE);
+
+
+
 
 
     //注册单个方块,且without item的方法
