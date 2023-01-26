@@ -1,6 +1,9 @@
 package com.tsunamicloud.tsunami.world.dimension;
 
 import com.tsunamicloud.tsunami.Main;
+import com.tsunamicloud.tsunami.item.ModItems;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -16,5 +19,13 @@ public class ModDimensions {
 
     public static void register() {
         Main.LOGGER.debug("Registering ModDimensions for " + Main.MOD_ID);
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(Blocks.GLOWSTONE)
+                .destDimID(TSUDIM_DIMENSION_KEY.getValue())
+                .tintColor(45, 79, 195)
+                .lightWithItem(ModItems.SAUALPITE_STAFF)
+                .onlyLightInOverworld()
+                .registerPortal();
     }
 }
