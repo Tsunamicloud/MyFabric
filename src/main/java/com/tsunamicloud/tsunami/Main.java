@@ -29,6 +29,7 @@ import com.tsunamicloud.tsunami.tools.CrimsonCrystalToolMaterial;
 import com.tsunamicloud.tsunami.tools.weapon.CrimsonCrystalSword;
 import com.tsunamicloud.tsunami.util.ModLootTableModifiers;
 import com.tsunamicloud.tsunami.util.ModRegistries;
+import com.tsunamicloud.tsunami.world.dimension.ModDimensions;
 import com.tsunamicloud.tsunami.world.feature.ModConfiguredFeatures;
 import com.tsunamicloud.tsunami.villager.ModVillagers;
 import com.tsunamicloud.tsunami.world.gen.ModWorldGen;
@@ -212,6 +213,7 @@ public class Main implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 		GeckoLib.initialize();
 		ModStructures.registerStructureFeatures();
+		ModDimensions.register();
 
 
 		//注册新建的自定义基础物品：猩红水晶
