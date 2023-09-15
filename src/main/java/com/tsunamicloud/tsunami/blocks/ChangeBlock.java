@@ -35,7 +35,6 @@ public class ChangeBlock extends Block {
 
         Item item = player.getMainHandStack().getItem();
 
-
         if (!state.get(COLOR) && item == Items.DIAMOND){
             if (!player.isCreative()){
                 player.getStackInHand(Hand.MAIN_HAND).decrement(1);

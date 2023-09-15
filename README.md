@@ -1,4 +1,8 @@
-# Fabric Example Mod
+# Custom Fabric Mod
+
+## Intro
+
+This is a customized mod modified from fabric example mod for learning purpose.
 
 ## Setup
 
